@@ -25,6 +25,8 @@ body {
 }
 
 header {
+    display: flex;
+    height: 250px;
     background-color: @cordoHeader;
     color: @corDoTexto;
     .container {
@@ -32,6 +34,7 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        
         h1 {
             margin: 32px;
             font-size: 3em;
@@ -69,7 +72,7 @@ h1 {
         align-items: center;
         justify-content: center;
     }
-    .texto-scundario {
+    .texto-secundario {
         margin: 55px auto 0;
         max-width: 920px;
     }
@@ -113,11 +116,10 @@ h1 {
 }
 
 .section-2 {
-    background-color: @corDoFundo;
+    background-color:#ecf0f1;
     align-items: center;
     text-align: center;
     h2 {
-        margin-top: 120px;
         color: @corDoTitulo;
         font-family: @fonteDoTitulo;
         font-size: 3em;
@@ -175,3 +177,248 @@ h1 {
         }
     }
 }
+
+.coment-section {
+    margin: 150px;
+}
+
+.coment {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color:#FDF9F4;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    border-radius: 18px;
+    font-weight: none;
+    font-family: sans-serif;
+    &-title {
+        margin: 32px;
+    }
+
+    &-group {
+        
+        textarea {
+            border: 1px solid #D5D5D5;
+            border-radius: 10px;
+            resize: none;
+            padding: 18px;
+            margin-bottom: 14px ;
+        }
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+
+        input {
+            border: 1px solid #D5D5D5;
+            border-radius: 10px;
+            padding: 8px;
+            margin-top: 12px;
+        }
+    }
+
+    &-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        
+        input {
+            
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        label {
+            font-size: 14px;
+            padding-left: 8px;
+        }
+    }
+
+    &-button {
+        border-radius: 10px;
+        margin: 24px;
+        width: 70%;
+        padding: 6px;
+        background-color:  @corDoBotao;
+        border: none;
+        color: @corDoTexto;
+
+        &:hover {
+            background-color: darken(#81ecec, 40%);
+        }
+    }
+
+}
+
+footer {
+    background-color: @cordoHeader;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social {
+    margin-bottom: 10px;
+    &-icon {
+        display: inline-block;
+        margin-right: 10px;
+        color: #fff;
+        font-size: 24px;
+        &:hover {
+            color: #00f; /* Altere para a cor desejada ao passar o mouse */
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .section-carrossel {
+        display: block;
+
+        p {
+            padding-top: 32px;
+            font-size: 18px;
+        }
+    }
+
+    #inicio {
+        .texto-secundario {
+            max-width: 600px;
+            font-size: 18px;
+        }
+    }
+
+    .coment-section {
+        margin: 110px;
+    }
+
+    .coment {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        &-group {
+            textarea {
+                max-width: 300px;
+                max-height: 120px;
+            }
+        }
+        &-grid {
+            
+            gap: 22px;
+
+            input {
+                margin-left: 10px;
+                max-width: 90%;
+            }
+        }
+
+        &-checkbox {
+            input {
+                margin-left: 2px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 667px) {
+
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+        
+        .container {
+            flex-direction: column;
+            text-align: center;
+            
+            h1 {
+                margin: 20px 0;
+                font-size: 2em;
+            }
+
+            ul {
+                flex-direction: column;
+                
+                li {
+                    margin: 8px 0;
+                }
+            }
+        }
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .section-carrossel {
+        margin: 20px 0;
+
+        p {
+            margin: 20px 0;
+            font-size: 16px;
+        }
+    }
+
+    .carrossel {
+        width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .section-2 {
+        h2 {
+            margin:40px 0;
+            font-size: 2em;
+        }
+
+        .container {
+            padding: 0 10px;
+        }
+
+        .cards {
+            flex-direction: column;
+            
+            .card {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    .coment-section {
+        margin: 50px 0;
+    }
+
+    .coment {
+        width: 90%;
+
+        &-group {
+            textarea {
+                max-width: 220px;
+            }
+        }
+
+        &-grid {
+            grid-template-columns: 1fr;
+        }
+
+        &-checkbox {
+            max-width: 240px;
+            label {
+                font-size: 12px;
+            }
+        }
+    }
+}
+

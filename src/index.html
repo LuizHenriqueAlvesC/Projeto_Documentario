@@ -14,19 +14,19 @@
     <header>
         <div class="container">
             <h1>Documentário</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#inicio">Início | </a>
-                    </li>
-                    <li>
-                        <a href="#outros-documentarios">Outros Documentários | </a>
-                    </li>
-                    <li>
-                        <a href="#">Comentários</a>
-                    </li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#inicio">Início | </a>
+                        </li>
+                        <li>
+                            <a href="#outros-documentarios">Outros Documentários | </a>
+                        </li>
+                        <li>
+                            <a href="#comentarios">Comentários</a>
+                        </li>
+                    </ul>
+                </nav>
         </div>
     </header>
 
@@ -42,7 +42,7 @@
                         <img src="https://media.istockphoto.com/id/1420676204/pt/foto/portrait-of-a-royal-bengal-tiger-alert-and-staring-at-the-camera-national-animal-of-bangladesh.jpg?s=612x612&w=0&k=20&c=ykuy9gJsM_6-kxuiBwGdur8j5fn_XhM-CkH485l-siA=" alt="">
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga velit, perferendis hic repudiandae temporibus quisquam non iusto atque fugiat? Voluptate velit labore incidunt voluptatum laudantium, nam itaque provident eius animi.
+                <p class="texto-primario">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga velit, perferendis hic repudiandae temporibus quisquam non iusto atque fugiat? Voluptate velit labore incidunt voluptatum laudantium, nam itaque provident eius animi.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nisi quam quis consequuntur aut laboriosam, ea quos rem ex laborum, ad vitae! Qui, expedita earum porro libero reprehenderit officiis dolore?
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nisi quam quis consequuntur aut laboriosam, ea quos rem ex laborum, ad vitae! Qui, expedita earum porro libero reprehenderit officiis dolore?
                 </p>
@@ -52,7 +52,7 @@
                 <h2>Sobre o animal</h2>
 
                 <img src="https://via.placeholder.com/500x500" alt="">
-                <p class="texto-scundario">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga velit, perferendis hic repudiandae temporibus quisquam non iusto atque fugiat? Voluptate velit labore incidunt voluptatum laudantium, nam itaque provident eius animi.
+                <p class="texto-secundario">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga velit, perferendis hic repudiandae temporibus quisquam non iusto atque fugiat? Voluptate velit labore incidunt voluptatum laudantium, nam itaque provident eius animi.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nisi quam quis consequuntur aut laboriosam, ea quos rem ex laborum, ad vitae! Qui, expedita earum porro libero reprehenderit officiis dolore?
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nisi quam quis consequuntur aut laboriosam, ea quos rem ex laborum, ad vitae! Qui, expedita earum porro libero reprehenderit officiis dolore?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eaque nam voluptatibus repudiandae placeat, ratione aspernatur velit. Error, ratione fugiat deserunt alias numquam dicta eius labore, odio atque, nostrum vero?
@@ -82,14 +82,58 @@
                 <p>Conateúdo do card 1</p>
                 <button type="button" class="botao">Clique aqui</button>
             </div>
+            <div class="card">
+                <h3>Card 1</h3>
+                <img src="https://cdn.pixabay.com/photo/2023/11/09/19/36/zoo-8378189_1280.jpg" alt="">
+                <p>Conateúdo do card 1</p>
+                <button type="button" class="botao">Clique aqui</button>
+            </div>
+            <div class="card">
+                <h3>Card 1</h3>
+                <img src="https://cdn.pixabay.com/photo/2023/11/09/19/36/zoo-8378189_1280.jpg" alt="">
+                <p>Conateúdo do card 1</p>
+                <button type="button" class="botao">Clique aqui</button>
+            </div>
+            <div class="card">
+                <h3>Card 1</h3>
+                <img src="https://cdn.pixabay.com/photo/2023/11/09/19/36/zoo-8378189_1280.jpg" alt="">
+                <p>Conateúdo do card 1</p>
+                <button type="button" class="botao">Clique aqui</button>
+            </div>
         </div>
     </div>
 </section>
-<section>
-    <footer>
 
-    </footer>
+<section class="coment-section" id="comentarios">
+    <div class="coment">
+        <h3 class="coment-title">Deixe seu comentario</h3>
+        <form action="#" class="coment-group">
+            <textarea required placeholder="Comentário" name="comentario" cols="80" rows="12"></textarea>
+            <div class="coment-grid">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail*" required>
+            </div>
+            <div class="coment-checkbox">
+                <input type="checkbox">
+                <label for="">Salvar meus dados neste navegador para a próxima vez que eu comentar.</label>
+            </div>
+        </form>
+
+    <button class="coment-button" type="submit">Continuar </button>
+    </div>
 </section>
+
+<footer>
+    <div class="social">
+        <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2024 Documentário. Todos os direitos reservados.</p>
+</footer>
+
+
     <script src="@@ENDERECO_DO_JS"></script>
 </body>
 </html>
